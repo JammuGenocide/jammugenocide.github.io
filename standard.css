@@ -98,16 +98,16 @@ h2 { font-size: 2.0em; margin-top: .4em; margin-bottom: .9em; }
 h3 { font-size: 1.6em; }
 h4 { font-size: 1.4em; }
 .section_divider { width: 100%; vertical-align: top;  margin-bottom: 1.5em; }
+
 a.section_label:link, a.section_label:visited { 
- display: inline-block; width: 20%; background-color: #ff959a;   border-radius: 25px; 
+ display: inline-block; width: 20%; background-color: white;   border-radius: 10px; border-color: #ff959a; border-style: solid; border-width: 3px;
  white-space: pre; padding-top: 0.5em; padding-bottom: 0.5em; padding-left: 0.1em; padding-right: 0.1em; text-align: center;
- color: white; font-size: 125%; font-weight: bold; text-shadow: 1px 1px 2px black;
+ color: #f96061; font-size: 100%; font-weight: bold; 
 }
-a.section_label:hover { background-color: #808080; text-decoration: none; transition: all 0.8s ease; }
+a.section_label:hover { background-color: #f96061; text-decoration: none; transition: all 0.8s ease; color: white;}
+
 .section_text_block { display: inline-block; width: 79%; vertical-align: top; padding-left: 0.3em; padding-top: 0.3em; }
 .up_arrow { position: fixed; right: 0; bottom: 0; z-index: 10; line-height: 1.0; text-align: center; padding-top: 0.5em; padding-bottom: 0; padding-right: 0.5em; padding-left: 0.5em; margin: 0; }
-a.up_arrow:link, a.up_arrow:visited { background-color: #666666; color: white; font-size: 110%; }
-a.up_arrow:hover { background-color: #E5E5E5; color: black; }
 .title_text { font-size: 1.4em; font-weight: bold; }
 #image_slideshow { max-width: 620px; position: relative; margin: auto; margin-bottom: 2%; margin-top: 1%; }
 .smalltext { font-size: 1.0em; }
@@ -232,8 +232,7 @@ form { margin-top: 0; margin-bottom: 0; }
 .fa {
     padding: 20px;
     font-size: 30px;
-    width: 50px;
-    text-align: center;
+    width: 50px    text-align: center;
     text-decoration: none;
     margin: 5px 2px;
 }
@@ -250,7 +249,6 @@ form { margin-top: 0; margin-bottom: 0; }
   background: #55ACEE;
   color: white;
 }
-
 
 .fa-instagram {
   background: #125688;
