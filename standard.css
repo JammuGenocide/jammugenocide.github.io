@@ -109,14 +109,6 @@ td {
   background-color: #FFFF;
 }
 
-ul.navbar {
-  list-style-type: none;
-  margin: 0;
-  overflow: hidden;
-  text-align: center;
-}
-
-li.navbar,
 li.dropdown {
   display: inline-block;
   padding-top: 0.5em;
@@ -124,8 +116,6 @@ li.dropdown {
 }
 
 
-a.navbar:link,
-a.navbar:visited,
 a.navbar_dropdown:link,
 a.navbar_dropdown:visited {
   color: black;
@@ -133,13 +123,12 @@ a.navbar_dropdown:visited {
   font-size: 1.1em;
 }
 
-a.navbar:hover,
 a.navbar_dropdown:hover {
   color: #CCCCCC;
 }
 
 .more_info_navbar {
-  position: absolute;
+  position: absolute; 
   margin-top: 0.5em;
   margin-left: -5%;
   min-width: 20%;
@@ -163,6 +152,7 @@ li.dropdown:hover .more_info_navbar {
   border-top: thin solid #4D4D4D;
   border-left: thin solid #4D4D4D;
   border-right: thin solid #4D4D4D;
+  border-radius: 5px;
 }
 
 a.more_info_text:link,
@@ -384,3 +374,45 @@ details.styled summary {
 details[open].styled summary {
   padding-bottom: 1em;
 }
+
+/*Footer*/
+
+
+.footer-basic {
+  padding:40px 0;
+  background-color:#ffffff;
+  color:#4b4c4d;
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+
+/* Credit to https://epicbootstrap.com/snippets/footer-basic */
