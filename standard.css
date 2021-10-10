@@ -2,7 +2,7 @@ body,
 html {
   height: 100%;
   margin: 0;
-  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 100%;
   font-weight: 400;
 }
@@ -220,48 +220,6 @@ h4 {
   font-size: 1.4em;
 }
 
-.section_divider {
-  width: 100%;
-  vertical-align: top;
-  margin-bottom: 1.5em;
-}
-
-a.section_label:link,
-a.section_label:visited {
-  display: inline-block;
-  width: 20%;
-  background-color: white;
-  border-radius: 10px;
-  border-color: #ff959a;
-  border-style: solid;
-  border-width: 1px;
-  white-space: pre;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  padding-left: 0.1em;
-  padding-right: 0.1em;
-  text-align: center;
-  color: #f96061;
-  font-size: 100%;
-  font-weight: bold;
-}
-
-a.section_label:hover {
-  background-color: #f96061;
-  text-decoration: none;
-  transition: all 0.8s ease;
-  color: white;
-}
-
-.section_text_block {
-  display: inline-block;
-  width: 79%;
-  vertical-align: top;
-  padding-left: 0.3em;
-  padding-top: 0.3em;
-}
-
-
 }
 
 /* End min-width: 800px */
@@ -279,7 +237,7 @@ a.section_label:hover {
     border-radius: 10px;
     border-color: #ff959a;
     border-style: solid;
-    border-width: 3px;
+    border-width: 1px;
     white-space: pre;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -417,3 +375,91 @@ details[open].styled summary {
 
 /* Credit to https://epicbootstrap.com/snippets/footer-basic */
 
+.btn-1,
+.btn-21 {
+  width: 300px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* Created by http://grohit.com/  */
+.btn-21 a {
+  text-decoration: none;
+  border: 2px solid #f96061;
+  padding: 15px;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.btn-21 span {
+  position: relative;
+  /* z-index coz when we put bg to before and after this span text will not be visible */
+  z-index: 3;
+}
+
+/* Button 1 styles */
+
+
+.btn-21 a:hover::before {
+  transform: scaleY(0);
+}
+
+/* Created by http://grohit.com/  */
+
+.btn-21 a:hover::after {
+  transform: scaleX(0);
+}
+
+/* Button 2 styles */
+
+.btn-21 a {
+  color: #ffffff;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-21 a:hover {
+  color: #000000;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-21 a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+  transform: scaleY(1);
+}
+
+.btn-21 a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f96061;
+  transition: all 0.5s ease-in-out;
+  transform: scaleX(1);
+}
+
+
+table, th, td {
+  border: 1px solid white;
+  padding: 5px;
+}
+table {
+  border-spacing: 0px;
+}
+.section_text_block{
+  font-weight: normal ;
+}
