@@ -174,34 +174,51 @@ form { margin-top: 0; margin-bottom: 0; }
 .tinytext { font-size: .75em; }
 .smallred { font-size: .85em; color: #BF1D1D; }
 .padded_divider { padding: 3px; background-color: #003193; color: white; font-weight: bold; }
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 50px    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-}
-.fa:hover {
-    opacity: 0.7;
-}
 
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
 .top-content {
   background-image: url('women.jpg');
   background-repeat: no-repeat;
   background-position: right;
   background-size: 50%;
+}
+
+#social {
+  padding: 15px 0;
+  box-sizing: border-box;
+  cursor: default;
+  text-align: center;
+}
+#social a {
+  display: inline-flex;
+  width: 42px;
+  height: 42px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  transition: 0.2s ease;
+  position: relative;
+  border-radius: 50%;
+}
+#social:hover a {
+  transform: scale(0.8, 0.8);
+  z-index: 0;
+}
+#social:hover a:hover {
+  transform: scale(1.4, 1.4);
+  z-index: 1;
+}
+
+#social.socialLight {
+  background: #fff;
+}
+#social.socialLight:hover a {
+  opacity: 0.5;
+}
+#social.socialLight a {
+  color: #444;
+  background: #fff;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+#social.socialLight a:hover {
+  opacity: 1;
 }
