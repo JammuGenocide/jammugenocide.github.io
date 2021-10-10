@@ -234,7 +234,7 @@ a.section_label:visited {
   border-radius: 10px;
   border-color: #ff959a;
   border-style: solid;
-  border-width: 3px;
+  border-width: 1px;
   white-space: pre;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
@@ -416,3 +416,4 @@ details[open].styled summary {
 }
 
 /* Credit to https://epicbootstrap.com/snippets/footer-basic */
+
