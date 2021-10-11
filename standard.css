@@ -349,6 +349,7 @@ details[open].styled summary {
   font-size:18px;
   line-height:1.6;
   margin-bottom:0;
+  font-size: 10px;
 }
 
 .footer-basic li {
@@ -368,7 +369,7 @@ details[open].styled summary {
 .footer-basic .copyright {
   margin-top:15px;
   text-align:center;
-  font-size:13px;
+  font-size:10px;
   color:#aaa;
   margin-bottom:0;
 }
@@ -463,3 +464,4 @@ table {
 .section_text_block{
   font-weight: normal ;
 }
+
