@@ -457,6 +457,8 @@ details[open].styled summary {
 table, th, td {
   border: 1px solid white;
   padding: 5px;
+  color: #777;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 table {
   border-spacing: 0px;
