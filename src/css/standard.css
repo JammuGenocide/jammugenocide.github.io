@@ -265,7 +265,7 @@ h4 {
 
 
 .top-content {
-  background-image: url('women.jpg');
+  background-image: url('/src/img/women.jpg');
   background-repeat: no-repeat;
   background-position: right;
   background-size: 50%;
