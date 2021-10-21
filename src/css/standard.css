@@ -410,3 +410,23 @@ border-spacing: 0px;
 .section_text_block{
 font-weight: normal ;
 }
+
+
+* {
+  color: inherit;
+}
+
+[aria-labelledby="toc-heading"] {
+  padding: 1rem;
+  border: 1px solid;
+}
+
+[aria-labelledby="toc-heading"] * {
+  margin: 0;
+}
+
+section:not(:target) {
+  display: none;
+}
+
+
