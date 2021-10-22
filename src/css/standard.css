@@ -425,8 +425,8 @@ font-weight: normal ;
   margin: 0;
 }
 
-section:not(:target) {
+/*section:not(:target) {
   display: none;
-}
+}*/
 
 
