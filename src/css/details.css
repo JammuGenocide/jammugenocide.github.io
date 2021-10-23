@@ -8,7 +8,7 @@
 --color-summary-2-highlight: #B4B3FF;
 --color-summary-3: #FFF0F3;
 --color-summary-3-highlight: #FFB3C0;
---font-ibm-plex-sans: "IBM Plex Sans", sans-serif;
+--font-ibm-plex-sans: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif !important;
 }
 .card {
 background: white;
@@ -29,6 +29,7 @@ line-height: 1.2;
 color: var(--color-title);
 margin-bottom: 20px;
 }
+
 .card details {
 border-radius: 4px;
 overflow: hidden;
@@ -55,8 +56,8 @@ border-left: 5px solid var(--color-summary-3-highlight);
 .card details p {
 font-family: var(--font-ibm-plex-sans);
 font-style: normal;
-font-weight: normal;
-font-size: 14px;
+font-weight: 400;
+font-size: inherit;
 line-height: 1.4;
 color: var(--color-title);
 }
@@ -77,8 +78,8 @@ background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox=
 color: transparent;
 background-size: 100% 100%;
 margin-right: 18px;
-width: 16px;
-height: 16px;
+width: 10px;
+height: 10px;
 transform: translateY(2px);
 }
 .card details[open] summary {
