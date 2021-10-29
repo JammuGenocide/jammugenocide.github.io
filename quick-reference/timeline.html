@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Quick Reference</title>
+    <title>Genocide Timeline</title>
     <base href="">
     <link rel="shortcut icon" href="favicon.png">
     <link rel="canonical" href="">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/standard.css" rel="stylesheet" type="text/css" />
+    <link href="../css/standard.css" rel="stylesheet" type="text/css" />
     <link href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
@@ -20,13 +20,12 @@
     </script>
     <script>
     $(function(){
-    $("#header").load("header.html");
-    $("#footer").load("footer.html");
+    $("#header").load("../header.html");
+    $("#footer").load("../footer.html");
     });
     </script>
   </head>
   <body>
-    
     <div id="header"></div>
     <div class="clear">&nbsp;</div>
     <div class="container">
@@ -34,33 +33,27 @@
       <!--BEGIN MAIN CONTENT-->
       <div class="top-half">
         <br>
-        <h2>Quick References: Condensed material regarding the Jammu Genocide</h2><br><br>
-        <img src="img/favicon.png" width="20" height="20" class="d-inline-block align-top" style="margin-top: 3px;">        
+        <h2>Jammu Genocide Timeline</h2><br><br>
+        <img src="../img/favicon.png" width="20" height="20" class="d-inline-block align-top" style="margin-top: 3px;">        
         <a href="../index.html">&nbsp Home </a><i class="arrow right"></i>
-        <a href="quick_reference.html">&nbsp Quick References</a>
-        <br><br><br>
-        <table>
-          <tr>
-            <th>   <div class="btn-21"><a href="timeline.html" class="" > <span>&nbsp &nbsp Chronology &nbsp &nbsp</span></a></div></th>
-            <th>   <div class="section_text_block">Indepth interactive timeline of the Jammu Genocide. </div></th>
-          </tr>
-          <tr>
-            <th>   <div class="btn-21"><a href="map.html" class="" > <span>&nbsp Genocide Maps &nbsp&nbsp</span></a></div></th>
-            <th>   <div class="section_text_block"> An geographical representation of the massacres that occurred in Jammu.</div></th>
-          </tr>
-          <tr>
-            <th>   <div class="btn-21"><a href="genocidefaq.html" class="" > <span>&nbsp &nbsp Genocide FAQ &nbsp &nbsp </span></a></div></th>
-            <th>   <div class="section_text_block"> Frequently asked questions regarding the Jammu Genocide.</div></th>
-          </tr>
-          <tr>
-            <th>   <div class="btn-21"><a href="images.html" class="" > <span> Photo Collection </span></a></div></th>
-            <th>   <div class="section_text_block">  Photo collection from the Jammu Genocide. </div></th>
-          </tr>
-          <tr>
-            <th>   <div class="btn-21"><a href="sitemap.html" class="" > <span>&nbsp &nbsp &nbsp &nbsp Site Map &nbsp &nbsp &nbsp &nbsp </span></a></div></th>
-            <th>   <div class="section_text_block"> Bird eyes view of the Jammu Genocide Collective. </div></th>
-          </tr>
-        </table>
+        <a href="../quick_reference.html">&nbsp Quick References</a><i class="arrow right"></i>
+        <a href="">&nbsp Chronology & Timeline </a>
+        <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+        <div id='timeline-embed' style="width: 100%; height: 800px"></div>
+        <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
+        <script type="text/javascript">
+        // The TL.Timeline constructor takes at least two arguments:
+        // the id of the Timeline container (no '#'), and
+        // the URL to your JSON data file or Google spreadsheet.
+        // the id must refer to an element "above" this code,
+        // and the element must have CSS styling to give it width and height
+        // optionally, a third argument with configuration options can be passed.
+        // See below for more about options.
+        timeline = new TL.Timeline('timeline-embed', 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSkfWnZrvj_pY5BtqzdIAaQXxyQUMoSSYrBZFBw-J6QWmfUT5VotgPEuUz_OSxkVN-iWZ4JWA2pgUD8/pubhtml');
+        </script>
+        <br>
+        <br>
+        <br>
         <hr>
         </br>
         <div class="twitter-tweet" style="text-align:center;"> <a href="https://twitter.com/intent/tweet?screen_name=JammuGenocide&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-size="large" data-text="The timeline of chronological events that lead to the Jammu Genocide & the massacres that occured.

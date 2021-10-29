@@ -235,7 +235,7 @@ margin-top: 100px;
 }
 /* End max-width: 799px */
 .top-content {
-background-image: url('/src/img/women.jpg');
+background-image: url('../img/women.jpg');
 background-repeat: no-repeat;
 background-position: right;
 background-size: 50%;
@@ -426,5 +426,7 @@ font-weight: 400 ;
   margin: 0;
 }
 
-
+.spacer{
+  padding-top:30px;
+}
 
