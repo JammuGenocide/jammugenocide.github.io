@@ -10,80 +10,90 @@
     <link href="css/standard.css" rel="stylesheet" type="text/css" />
     <link href="css/details.css" rel="stylesheet" type="text/css" />
     <link href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-    <meta name="description" content="">
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous">
-    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script>
     $(function(){
     $("#header").load("header.html");
     $("#footer").load("footer.html");
+    const items = document.querySelectorAll(".accordion button");
+    function toggleAccordion() {
+    const itemToggle = this.getAttribute('aria-expanded');
+    
+    for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('aria-expanded', 'false');
+    }
+    
+    if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+    }
+    }
+    items.forEach(item => item.addEventListener('click', toggleAccordion));
     });
     </script>
   </head>
   <body>
-<!--     <div id="header"></div> -->
+    <div id="header"></div>
     <div class="container">
       <!--BEGIN MAIN CONTENT-->
       <div class="top-half">
         <br><br>
-        <h2> About Jammu Genocide Independent Collective: An independent collective dedicated to perserving the legacy of Jammu Genocide  </h2>
+        <h2> About Jammu Genocide Independent Collective: An independent collective dedicated to perserving the legacy of Jammu Genocide</h2>
         <br><br>
         <img src="img/favicon.png" width="20" height="20" class="d-inline-block align-top" style="margin-top: 3px;">
         <a href="index.html">&nbsp Home </a><i class="arrow right"></i>
         <a href="#">&nbsp About </a>
-        <br>
-        <section>
-          <div class="card">
-            <h1>Frequently Asked Questions about the Jammu Genocide Collective</h1><br>
-            <details class="alert" open>
-            <summary>Mission & Objectives</summary>
-            <span><p>The Jammu Genocide Collective is an independent collective dedicated to the study, research, awareness and rememberance of the Jammu genocide that happened in 1947.</p>
-            <p>One of the main objectives of Jammu Genocide collective is to highlight the events that occured in 1947 under the Dogra state in J&K. The events that occurred in Jammu in 1947 were a genocide as it gains its conceptual horror precisely because of the exterminated nature of the Holocaust. Hitler wanted the Jews exterminated, wiped out from existence, not just driven out. The same is the case in the Jammu Genocide, the Dogra ruler Hari Singh wanted the Muslims of Jammu exterminated, he saw it to be the final solution of his political will.</p> <p>Large scale crimes which involve the ethnic cleansing and killing of a certain group of people cannot be forgotten.
-            Such events should be acknowledged and accepted by the world, there is a need to talk about these events so we can learn from them and recognize the need to do everything in our power to prevent such horrific events from ever occuring again. We also cannot ignore the reality of certain elements that still exist today in the region of south asia and particulary within India's geo-political boundaries.  </p></span>
-            </details>
-            
-            <details class="alert" open>
-            <summary>Areas of work</summary>
-              <p>Increase Awareness </p>
-              <p>Produce Educational Material</p>
-              <p>Promote Research </p>
-              <p>Collect documentation, testimonies and stories</p>
-            </details>
-            
-            <b>Jammu Genocide Collective FAQ?</b><br>
-            <details class="alert">
-            <summary>What are the goals of Jammu Genocide Collective?</summary>
-            <p>The goals are to collect documents, data and information regarding the Jammu Genocide. To promote awarness of the Genocide along with telling the stories of the victims. To produce research publications, educational material and carrying forward the legacy of the Jammu Genocide. Some long term goals also include recognition of the genocide by different state parlimentary bodies and Human Rights Organizations.</p>
-            </details>
-            <details class="alert">
-            <summary>What type of initiative is Jammu Genocide Collective?</summary>
-            <p>Jammu Genocide Collective is an independent initative, no organization, govt or institution supports this initiative. This initative was started by a group individuals with the aim to raise awarness of the genocide internationally with focus in South Asia.</p>
-            </details>
-            <details class="alert">
-            <summary>How is Jammu Genocide Collective funded?</summary>
-            <p>Jammu Genocide Collective started as a small side project to raise awarness on social media. This later transformed into a larger initative with multiple goals. The Jammu Genocide Collective is entierly self funded by its founding members. </p>
-            </details>
+        
+        <div class="container">
+          <h2>Frequently Asked Questions</h2>
+          <div class="accordion">
+            <div class="accordion-item">
+              <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">What are the Mission & Objectives of this collective?</span><span class="icon" aria-hidden="true"></span></button>
+              <div class="accordion-content">
+                <span><p>The Jammu Genocide Collective is an independent collective dedicated to the study, research, awareness and rememberance of the Jammu genocide that happened in 1947.</p>
+                <p>One of the main objectives of Jammu Genocide collective is to highlight the events that occured in 1947 under the Dogra state in J&K. The events that occurred in Jammu in 1947 were a genocide as it gains its conceptual horror precisely because of the exterminated nature of the Holocaust. Hitler wanted the Jews exterminated, wiped out from existence, not just driven out. The same is the case in the Jammu Genocide, the Dogra ruler Hari Singh wanted the Muslims of Jammu exterminated, he saw it to be the final solution of his political will.</p> <p>Large scale crimes which involve the ethnic cleansing and killing of a certain group of people cannot be forgotten.
+              Such events should be acknowledged and accepted by the world, there is a need to talk about these events so we can learn from them and recognize the need to do everything in our power to prevent such horrific events from ever occuring again. We also cannot ignore the reality of certain elements that still exist today in the region of south asia and particulary within India's geo-political boundaries.  </p></span>
+            </div>
           </div>
-        </section>
-        <br>
-        <br>
-        <br>
-        <hr>
-        </br>
-        <div class="twitter-tweet" style="text-align:center;"> <a href="https://twitter.com/intent/tweet?screen_name=JammuGenocide&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-size="large" data-text="The timeline of chronological events that lead to the Jammu Genocide & the massacres that occured.
-        https://jammugenocide.github.io/timeline.html" data-show-count="false">Tweet to @JammuGenocide</a>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <div class="accordion-item">
+            <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">What Areas of work does Jammu genocide Collective work on?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+              <p>Genocide Awareness </p>
+              <p>Production of Educational Material</p>
+              <p>Promotion of Research </p>
+              <p>Collection of documentation, testimonies and stories</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">What are the goals of Jammu Genocide Collective?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+             <p>The goals are to collect documents, data and information regarding the Jammu Genocide. To promote awarness of the Genocide along with telling the stories of the victims. To produce research publications, educational material and carrying forward the legacy of the Jammu Genocide. Some long term goals also include recognition of the genocide by different state parlimentary bodies and Human Rights Organizations.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">What type of initiative is Jammu Genocide Collective?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+            <p>Jammu Genocide Collective is an independent initative, no organization, govt or institution supports this initiative. This initative was started by a group individuals with the aim to raise awarness of the genocide internationally with focus in South Asia.</p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How is Jammu Genocide Collective funded?</span><span class="icon" aria-hidden="true"></span></button>
+            <div class="accordion-content">
+             <p>Jammu Genocide Collective started as a small side project to raise awarness on social media. This later transformed into a larger initative and collective. The Jammu Genocide Collective is entierly self funded by its founding members. </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <!--END MAIN CONTENT-->
+      </br>
+      <div class="twitter-tweet" style="text-align:center;"> <a href="https://twitter.com/intent/tweet?screen_name=JammuGenocide&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-size="large" data-text="The timeline of chronological events that lead to the Jammu Genocide & the massacres that occured.
+      https://jammugenocide.github.io/timeline.html" data-show-count="false">Tweet to @JammuGenocide</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
-    <div class="clear">&nbsp;</div>
-    <!--BEGIN FOOTER-->
-    <div id="footer"></div>
-  </body>
+  </div>
+</div>
+    <!--END MAIN CONTENT-->
+  <!--BEGIN FOOTER-->
+  <div id="footer"></div>
+</body>
 </html>
