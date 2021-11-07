@@ -10,7 +10,7 @@
   border-bottom: 1px solid #e5e5e5;
 }
 .accordion .accordion-item button[aria-expanded=true] {
-  border-bottom: 1px solid #f96061;
+  border-bottom: 1px solid #fa9fa0;
 }
 .accordion button {
   position: relative;
@@ -27,12 +27,12 @@
 }
 .accordion button:hover, .accordion button:focus {
   cursor: pointer;
-  color: #f96061;
+  color: #fa9fa0;
 }
 .accordion button:hover::after, .accordion button:focus::after {
   cursor: pointer;
   color: #f96061;
-  border: 1px solid #f96061;
+  border: 1px solid #fa9fa0;
 }
 .accordion button .accordion-title {
   padding: 1em 1.5em 1em 0;
@@ -92,4 +92,59 @@
   font-size: 1rem;
   font-weight: 300;
   margin: 2em 0;
+}
+
+/**
+ * Tabs
+ */
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tabs label {
+  order: 1;
+  display: block;
+  padding: 1rem 2rem;
+  margin-right: 0.2rem;
+  cursor: pointer;
+  background: #fa9fa0;
+  font-weight: normal;
+  transition: background ease 0.2s;
+  border-radius: 5px;
+}
+
+.tabs .tab {
+  order: 99;
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding: 1rem;
+  background: #fff;
+}
+
+.tabs input[type=radio] {
+  display: none;
+}
+
+.tabs input[type=radio]:checked + label {
+  background: #fff;
+  border: 2px solid #fa9fa0;
+}
+
+.tabs input[type=radio]:checked + label + .tab {
+  display: block;
+}
+
+@media (max-width: 45em) {
+  .tabs .tab,
+.tabs label {
+    order: initial;
+  }
+
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
+  }
 }
