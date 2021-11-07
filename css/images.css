@@ -1,0 +1,136 @@
+.containerme {
+height: 100vh;
+width: 100vw;
+max-height: 600px;
+max-width: 1280px;
+min-height: 600px;
+min-width: 1000px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+margin: 0 auto;
+}
+.border {
+height: 369px;
+width: 290px;
+background: transparent;
+border-radius: 10px;
+transition: border 1s;
+position: relative;
+}
+.border:hover {
+border: 1px solid #fff;
+}
+.card {
+height: 379px;
+width: 300px;
+background: #808080;
+border-radius: 10px;
+transition: background 0.8s;
+overflow: hidden;
+background: #000;
+box-shadow: 0 70px 63px -60px #000;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+}
+
+
+
+.card0 {
+background: url("https://raw.githubusercontent.com/JammuGenocide/PhotoCollection/main/mirpur_masasace_getty.jpeg") left center no-repeat;
+background-size: 600px;
+}
+.card0:hover {
+background: url("https://raw.githubusercontent.com/JammuGenocide/PhotoCollection/main/mirpur_masasace_getty.jpeg") top center no-repeat;
+background-size: 600px;
+}
+.card0:hover .fa {
+opacity: 1;
+}
+.card1 {
+background: url("https://raw.githubusercontent.com/JammuGenocide/PhotoCollection/main/peshawar_immigrants.jpeg") center center no-repeat;
+background-size: 600px;
+}
+.card1:hover {
+background: url("https://raw.githubusercontent.com/JammuGenocide/PhotoCollection/main/peshawar_immigrants.jpeg") bottom center no-repeat;
+background-size: 400px;
+}
+.card1:hover .fa {
+opacity: 1;
+}
+.card2 {
+background: url("https://raw.githubusercontent.com/JammuGenocide/PhotoCollection/main/lost_women.jpeg") top center no-repeat;
+background-size: 600px;
+}
+.card2:hover {
+background: url("https://raw.githubusercontent.com/JammuGenocide/PhotoCollection/main/lost_women.jpeg") right center no-repeat;
+background-size: 400px;
+}
+.card2:hover .fa {
+opacity: 1;
+}
+.card3 {
+background: url("https://raw.githubusercontent.com/JammuGenocide/PhotoCollection/main/jammu_refugees.jpeg") top center no-repeat;
+background-size: 600px;
+}
+.card3:hover {
+background: url("https://raw.githubusercontent.com/JammuGenocide/PhotoCollection/main/jammu_refugees.jpeg") right center no-repeat;
+background-size: 600px;
+}
+.card3:hover .fa {
+opacity: 1;
+}
+.card4 {
+background: url("https://raw.githubusercontent.com/JammuGenocide/PhotoCollection/main/mendhar_refugees.jpeg") top center no-repeat;
+background-size: 600px;
+}
+.card4:hover {
+background: url("https://raw.githubusercontent.com/JammuGenocide/PhotoCollection/main/mendhar_refugees.jpeg") left center no-repeat;
+background-size: 600px;
+}
+.card4:hover .fa {
+opacity: 1;
+}
+.card5 {
+background: url("https://raw.githubusercontent.com/JammuGenocide/PhotoCollection/main/refugeeqq.jpeg") bottom center no-repeat;
+background-size: 600px;
+}
+.card5:hover {
+background: url("https://raw.githubusercontent.com/JammuGenocide/PhotoCollection/main/refugeeqq.jpeg") left center no-repeat;
+background-size: 400px;
+}
+.card5:hover .fa {
+opacity: 1;
+}
+
+
+
+
+
+
+h2 {
+font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif !important;
+color: #fff;
+margin: 20px;
+opacity: 0;
+transition: opacity 1s;
+}
+.fa {
+opacity: 0;
+transition: opacity 1s;
+}
+table {
+border: 0px solid black;
+display: flex;
+margin: 0 auto;
+width: 100vw;
+max-height: 100px;
+max-width: 1280px;
+min-width: 1000px;
+}
+td {
+  width: 33.333vw;
+  text-align: center;
+}
