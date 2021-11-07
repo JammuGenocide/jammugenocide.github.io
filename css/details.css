@@ -31,7 +31,7 @@
 }
 .accordion button:hover::after, .accordion button:focus::after {
   cursor: pointer;
-  color: #f96061;
+  color: #fa9fa0;
   border: 1px solid #fa9fa0;
 }
 .accordion button .accordion-title {
@@ -46,7 +46,7 @@
   height: 22px;
   border: 1px solid;
   border-radius: 22px;
-  color: #f96061;
+  color: #fa9fa0;
 }
 .accordion button .icon::before {
   display: block;
