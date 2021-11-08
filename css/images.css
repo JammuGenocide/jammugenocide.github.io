@@ -1,6 +1,5 @@
 .containerme {
 height: 100vh;
-width: 100vw;
 max-height: 600px;
 max-width: 1280px;
 min-height: 600px;
@@ -106,10 +105,6 @@ opacity: 1;
 }
 
 
-
-
-
-
 h2 {
 font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif !important;
 color: #fff;
@@ -125,12 +120,11 @@ table {
 border: 0px solid black;
 display: flex;
 margin: 0 auto;
-width: 100vw;
+text-align: center;
 max-height: 100px;
 max-width: 1280px;
 min-width: 1000px;
 }
 td {
   width: 33.333vw;
-  text-align: center;
 }
