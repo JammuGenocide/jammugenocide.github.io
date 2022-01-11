@@ -112,10 +112,10 @@ margin: 20px;
 opacity: 0;
 transition: opacity 1s;
 }
-.fa {
+/*.fa {
 opacity: 0;
 transition: opacity 1s;
-}
+}*/
 table {
 border: 0px solid black;
 display: flex;
