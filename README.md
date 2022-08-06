@@ -1,3 +1,3 @@
 # Jammu Genocide Collective
 
-Made with ❤ by Hamad
+Made with ❤ by @HistoryofAJK
