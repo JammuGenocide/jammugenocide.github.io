@@ -55,7 +55,7 @@ text-decoration: none;
 color: #white;
 }
 a:hover {
-color: #CC0033;
+color: #f96061;
 }
 .footer_rule {
 display: block;
@@ -210,7 +210,7 @@ display: inline-block;
 width: 100%;
 background-color: white;
 border-radius: 10px;
-border-color: #ff959a;
+border-color: #f96061;
 border-style: solid;
 border-width: 1px;
 white-space: pre;
@@ -219,12 +219,12 @@ padding-bottom: 0.5em;
 padding-left: 0.1em;
 padding-right: 0.1em;
 text-align: center;
-color: #fa9fa0;
+color: #f96061;
 font-size: 100%;
 font-weight: bold;
 }
 a.section_label:hover {
-background-color: #fa9fa0;
+background-color: #f96061;
 text-decoration: none;
 transition: all 0.8s ease;
 color: white;
@@ -395,7 +395,7 @@ left: 0;
 top: 0;
 width: 100%;
 height: 100%;
-background-color: #fa9fa0;
+background-color: #f96061;
 transition: all 0.5s ease-in-out;
 transform: scaleX(1);
 }
