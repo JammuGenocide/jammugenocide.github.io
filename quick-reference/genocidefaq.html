@@ -2,9 +2,8 @@
 <html>
   <head>
     <title>Genocide FAQ</title>
-    <base href="http://www.jammugenocide.org/genocidefaq.html">
     <link rel="shortcut icon" href="favicon.png">
-    <link rel="canonical" href="http://www.jammugenocide.org/genocidefaq.html">
+    <link rel="canonical" href="http://www.jammugenocide.org/quick-reference/genocidefaq.html">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/css/standard.css" rel="stylesheet" type="text/css" />
@@ -17,6 +16,7 @@
     $(function(){
     $("#header").load("/header.html");
     $("#footer").load("/footer.html");
+    
     const items = document.querySelectorAll(".accordion button");
     function toggleAccordion() {
     const itemToggle = this.getAttribute('aria-expanded');
@@ -35,7 +35,9 @@
   </head>
   <body>
     <div id="header"></div>
+    <div class="clear">&nbsp;</div>
     <div class="container">
+      <div class="messages_block"> </div>
       <!--BEGIN MAIN CONTENT-->
       <div class="top-half">
         <br><br>
