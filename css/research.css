@@ -1,0 +1,45 @@
+.container {
+  width: 710px;
+  position: relative;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+p { margin-bottom: 1.3em; }
+p:last-child { margin-bottom: 0; }
+
+.book-list {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.3em;
+}
+
+.book-list:last-child {
+  margin-bottom: 0;
+}
+
+.book-list .book-img {
+  margin-right: 30px;
+}
+
+.book-list .book-link {
+  text-decoration: none;
+  color: #B21A13;
+}
+
+.book-list .book-authors {
+  font-size: .75em;
+  font-style: italic;
+}
+
+.bacon-shadow:after {
+  position: absolute;
+  content: "";
+  left: 20px;
+  right: 20px;
+  bottom: 0px;
+  z-index: -1;
+  box-shadow: 0 0 30px 4px rgba(0,0,0,0.60);
+}
