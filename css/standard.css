@@ -52,7 +52,7 @@ margin: 0;
 a:link,
 a:visited {
 text-decoration: none;
-color: #white;
+color: white;
 }
 a:hover {
 color: #f96061;
@@ -235,7 +235,7 @@ margin-top: 100px;
 }
 /* End max-width: 799px */
 .top-content {
-background-image: url('../img/women.jpg');
+background-image: url('../images/women.jpg');
 background-repeat: no-repeat;
 background-position: right;
 background-size: 50%;
