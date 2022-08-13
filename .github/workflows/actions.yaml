@@ -19,3 +19,5 @@ jobs:
         uses: pavi2410/html-preview-action@v2
         with:
           html_file: 'index2.html'
+      - name: View HTLM 
+        run: steps.html_preview.outputs.url
