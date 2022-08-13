@@ -14,9 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: anishathalye/proof-html@v1
+      - name: Check HTML
+        uses: chabad360/htmlproofer@master
         with:
-          enforce_https: false
-          check_img_http: false
-          tokens: |
-            {"https://github.com": "${{ secrets.GITHUB_TOKEN }}"}
+          # arguments: --allow-missing-href
