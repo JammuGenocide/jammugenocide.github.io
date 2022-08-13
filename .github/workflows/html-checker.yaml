@@ -15,5 +15,5 @@ jobs:
     steps:
       - uses: anishathalye/proof-html@v1
         with:
-          directory: ./_site
-          enforce_https: false
+          directory: ./
+          enforce_https: true
