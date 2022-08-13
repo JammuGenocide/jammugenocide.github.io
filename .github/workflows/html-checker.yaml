@@ -13,8 +13,7 @@ jobs:
  deploy:
     runs-on: ubuntu-latest
     steps:
-        name: HTML checker
-        uses: anishathalye/proof-html@v1
+      - uses: anishathalye/proof-html@v1
         with:
-          directory: ./
-          enforce_https: true
+          directory: ./_site
+          enforce_https: false
