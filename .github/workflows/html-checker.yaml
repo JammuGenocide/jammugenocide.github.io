@@ -13,7 +13,10 @@ jobs:
  deploy:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - uses: anishathalye/proof-html@v1
         with:
-          directory: ./
-          enforce_https: true
+          enforce_https: false
+          check_img_http: false
+          tokens: |
+            {"https://github.com": "${{ secrets.GITHUB_TOKEN }}"}
