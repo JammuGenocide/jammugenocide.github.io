@@ -32,7 +32,7 @@ ul li a.dest:hover, ul li a.arch:hover { color:#999; text-decoration:none; }
 .fs { float:left; margin:12px 4px 10px 0; padding:0; font-size:65px; line-height:62%; color:#fa9fa0; }
 }
 
-pre { width:476px; margin-bottom:15px; padding:20px; background:#EEE; border-top:1px solid #CCC; border-bottom:1px solid #CCC; font-family:"Courier New",Courier,monospace; font-size:12px; line-height:140%; overflow:auto; }
+pre { margin-bottom:15px; padding:20px; background:#EEE; border-top:1px solid #CCC; border-bottom:1px solid #CCC; font-family:"Courier New",Courier,monospace; font-size:12px; line-height:140%; overflow:auto; }
 code { margin:0; padding:0; font-family:Courier,monospace; font-size:13px; line-height:1.5em; }
 #responses pre { width:474px; margin-bottom:15px; padding:10px; }
 
