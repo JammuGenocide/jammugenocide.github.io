@@ -83,7 +83,7 @@ li,
 tr,
 td {
 font-size: 1.0em;
-line-height: 1.4;
+/* line-height: 1.4; */
 font-weight: 400;
 }
 .container {
@@ -414,18 +414,19 @@ font-weight: 400 ;
 
 * {
   color: inherit;
+  box-sizing: border-box;
 }
 
-[aria-labelledby="toc-heading"] {
+/* [aria-labelledby="toc-heading"] {
   padding: 1rem;
   border: 1px solid;
-}
+} */
 
-[aria-labelledby="toc-heading"] * {
+/* [aria-labelledby="toc-heading"] * {
   margin: 0;
-}
+} */
+
 
 .spacer{
   padding-top:30px;
 }
-
